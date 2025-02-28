@@ -1,0 +1,153 @@
+@font-face {
+    font-family: font1;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: auto;
+    font-family: 'font1';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(240, 78%, 98%);
+    gap: 20px;
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 300px, 0;
+    background-position-x: 0, 300px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        color: hsl(233, 13%, 49%)
+    }
+}
+.switchText{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.switch{
+    width: 30px;
+    height: 20px;
+    border: none;
+    background-color: hsl(237, 63%, 64%);
+    display: flex;
+    justify-content: right;
+    border-radius: 20px;
+}
+.switch:hover{
+    cursor: pointer;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+}
+.circle:hover{
+    cursor: pointer;
+}
+h2{
+    color: hsl(232, 13%, 33%);
+}
+.annually{
+    display: none;
+}
+article{
+    height: 80%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+
+}
+h1{
+    font-size: 3rem;
+}
+.one{
+    flex-basis: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(233, 13%, 49%);
+    gap: 10px;
+        hr{
+            border-color: hsl(234, 14%, 74%);
+            width: 80%;
+        }
+}
+#basicButton, #masButton{
+    color: white;
+    border: none;
+    width: 50%;
+    height: 25px;
+    background-color: hsl(237, 63%, 64%);
+    border-radius: 5px;
+}
+#basicButton:hover, #masButton:hover{
+    background-color: white;
+    border: 2px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    cursor: pointer;
+}
+.professional{
+    background-color: hsl(237, 63%, 64%);
+    flex-basis: 33.3%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    gap: 15px;
+    hr{
+        border-color: white;
+        width: 80%;
+    }
+}
+#proButton{
+    color: hsl(232, 13%, 33%);
+    border: none;
+    width: 50%;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+#proButton:hover{
+    background-color: hsl(237, 63%, 64%);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.attribution{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .basic, .professional, .master{
+        height: 400px;
+        width: 400px;
+    }
+}
+
