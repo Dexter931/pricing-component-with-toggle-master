@@ -13,7 +13,7 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: hsl(240, 78%, 98%);
     gap: 20px;
     background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
@@ -63,7 +63,7 @@ h2{
     display: none;
 }
 article{
-    height: 80%;
+    height: 60%;
     width: 60%;
     display: flex;
     align-items: center;
@@ -99,6 +99,7 @@ h1{
     border: 2px solid hsl(237, 63%, 64%);
     color: hsl(237, 63%, 64%);
     cursor: pointer;
+    text-transform: uppercase;
 }
 .professional{
     background-color: hsl(237, 63%, 64%);
@@ -129,6 +130,7 @@ h1{
     color: white;
     border: 2px solid white;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .attribution{
     display: none;
@@ -138,6 +140,8 @@ h1{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        background-image: none;
+        background-position: none;
     }
     article{
         display: flex;
@@ -146,8 +150,8 @@ h1{
         gap: 50px;
     }
     .basic, .professional, .master{
-        height: 400px;
-        width: 400px;
+        height: 100%;
+        width: 100%;
     }
 }
 
